@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "472299080379",
+    "project_id": "bulletinboardandroidkotlin",
+    "storage_bucket": "bulletinboardandroidkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472299080379:android:2f2db43651f3b3b9c0779e",
+        "android_client_info": {
+          "package_name": "com.wtf.bulletinboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472299080379-tmqvb1ae79biulflkhb15llm37rmnp70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKjxMG6FabGcVJtSifztXAOYKOZYpFj4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472299080379-tmqvb1ae79biulflkhb15llm37rmnp70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
