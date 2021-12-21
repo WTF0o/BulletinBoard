@@ -8,10 +8,28 @@
     <string name="ad_smartphone">Смартфоны</string>
     <string name="ad_dm">Бытовая техника</string>
     <string name="ad_cat2">Аккаунт</string>
-    <string name="ac_sign_in">Регистрация</string>
-    <string name="ac_sign_up">Войти</string>
+    <string name="ac_sign_in">Войти</string>
+    <string name="ac_sign_up">Регистрация</string>
     <string name="ac_sign_out">Выйти</string>
-    <string name="description_avatar">Your avatar</string>
-    <string name="open_toggle">Open toggle</string>
-    <string name="close_toggle">Close toggle</string>
+    <string name="description_avatar">Ваш аватар</string>
+    <string name="open_toggle">Открыть меню</string>
+    <string name="close_toggle">Закрыть меню</string>
+    <string name="sign_in_or_registration">Войдите или зарегистрируйтесь</string>
+    <!-- Sign Dialog -->
+    <string name="email_hint">Эмаил</string>
+    <string name="password_hint">Пароль</string>
+    <string name="sign_in_action">Войти</string>
+    <string name="sign_up_action">Зарегистрироваться</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="sign_up_error">Неудалось зарегистрироваться</string>
+    <string name="send_verification_email_error">Не удалось отправить email для подтверждение!</string>
+    <string name="send_verification_email_done">На вашу почту была отправлена ссылка для подтверждение вашего аккаунта!</string>
+    <string name="sent_reset_password">Письмо с восстановлением было отправлен</string>
+    <string name="reset_password_message">Для восстановление введите ваш Email!</string>
+    <string name="sign_in_error">Не удалось войти!</string>
+    <string name="sign_in_google">Войти с помощью GOOGLE</string>
+    <string name="sign_up_email_with_google">Email успешно подключен к Google аккаунту</string>
+    <string name="sign_up_email_with_google_error">Данный email уже используется в Google авторизации.
+        \nДля регистрации по данному email, требуется авторизаваться по Google аккаунту</string>
+    <string name="sign_in_successful">Вы успешно вошли в аккаунт</string>
 </resources>

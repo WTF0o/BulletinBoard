@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "472299080379-em8ui2p6n8ipjg5q08roneft1qtfketb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wtf.bulletinboard",
+            "certificate_hash": "8b1d5f4a253a34aea2651d18747ceefc7e3add65"
+          }
+        },
+        {
           "client_id": "472299080379-tmqvb1ae79biulflkhb15llm37rmnp70.apps.googleusercontent.com",
           "client_type": 3
         }
