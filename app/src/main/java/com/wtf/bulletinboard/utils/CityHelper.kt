@@ -30,4 +30,25 @@ object CityHelper {
 
         return countriesArray
     }
+
+    fun filterListData(list: ArrayList<String>, textFilter: String?): ArrayList<String>{
+        val tempList = arrayListOf<String>()
+
+        if(textFilter == null){
+            tempList.add("no result")
+            return tempList
+        }
+
+        for(selection: String in list){
+            if(selection.lowercase().startsWith(textFilter.lowercase())){
+                tempList.add(selection)
+            }
+        }
+        if(tempList.size == 0 )
+            tempList.add("no result")
+        else
+            tempList
+
+        return tempList
+    }
 }
