@@ -36,7 +36,15 @@
                 android:text="@string/select_country"
                 android:onClick="onClickSelectCountry"/>
 
-
+            <TextView
+                android:id="@+id/tvAdvertisementCity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/select_city"
+                android:onClick="onClickSelectCity"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

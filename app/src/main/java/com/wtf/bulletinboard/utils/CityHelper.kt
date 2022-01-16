@@ -31,6 +31,31 @@ object CityHelper {
         return countriesArray
     }
 
+    fun getAllCitiesOfCountry(context: Context, country: String): ArrayList<String> {
+        var citiesArray = ArrayList<String>()
+        try {
+
+            val inputStream: InputStream = context.assets.open("countriesToCities.json")
+            val size: Int = inputStream.available()
+            val bytesArray = ByteArray(size)
+            inputStream.read(bytesArray)
+
+            val jsonFile = String(bytesArray)
+            val jsonObject = JSONObject(jsonFile)
+            val citiesName = jsonObject.getJSONArray(country)
+
+            for (index in 0 until citiesName.length()) {
+                citiesArray.add(citiesName.getString(index))
+            }
+
+
+        } catch (e: IOException) {
+
+        }
+
+        return citiesArray
+    }
+
     fun filterListData(list: ArrayList<String>, textFilter: String?): ArrayList<String>{
         val tempList = arrayListOf<String>()
 
