@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import com.wtf.bulletinboard.R
 import com.wtf.bulletinboard.databinding.ActivityEditAdvertisementBinding
+import com.wtf.bulletinboard.dialogs.DialogSpinnerHelper
 import com.wtf.bulletinboard.utils.CityHelper
 
 class EditAdvertisementActivity : AppCompatActivity() {
@@ -15,13 +16,9 @@ class EditAdvertisementActivity : AppCompatActivity() {
         binding = ActivityEditAdvertisementBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapter = ArrayAdapter(
-            this,
-            android.R.layout.simple_spinner_item,
-            CityHelper.getAllCountries(this)
-        )
+        val arrayCountries = CityHelper.getAllCountries(this)
+        val dialog = DialogSpinnerHelper()
+        dialog.showSpinnerDialog(this, arrayCountries)
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spCountry.adapter = adapter
     }
 }
