@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.wtf.bulletinboard.R
 import com.wtf.bulletinboard.databinding.ActivityEditAdvertisementBinding
 import com.wtf.bulletinboard.dialogs.DialogSpinnerHelper
@@ -26,6 +27,17 @@ class EditAdvertisementActivity : AppCompatActivity() {
 
     fun onClickSelectCountry(view: View){
         val arrayCountries = CityHelper.getAllCountries(this)
-        dialog.showSpinnerDialog(this, arrayCountries)
+        dialog.showSpinnerDialog(this, arrayCountries, binding.tvAdvertisementCountry)
+        binding.tvAdvertisementCity.text = getString(R.string.select_city)
+    }
+
+    fun onClickSelectCity(view: View){
+        if(binding.tvAdvertisementCountry.text.isNotEmpty() &&
+            binding.tvAdvertisementCountry.text != getString(R.string.select_country)){
+            val arrayCities = CityHelper.getAllCitiesOfCountry(this, binding.tvAdvertisementCountry.text.toString())
+            dialog.showSpinnerDialog(this, arrayCities, binding.tvAdvertisementCity)
+        } else{
+            Toast.makeText(this, getString(R.string.select_country), Toast.LENGTH_SHORT).show()
+        }
     }
 }

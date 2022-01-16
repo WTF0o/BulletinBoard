@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.widget.SearchView
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.wtf.bulletinboard.R
@@ -11,11 +12,11 @@ import com.wtf.bulletinboard.utils.CityHelper
 
 class DialogSpinnerHelper {
 
-    fun showSpinnerDialog(context: Context, list: ArrayList<String>) {
+    fun showSpinnerDialog(context: Context, list: ArrayList<String>, selectTextView: TextView) {
         val builder = AlertDialog.Builder(context)
         val dialog = builder.create()
         val rootView = LayoutInflater.from(context).inflate(R.layout.spinner_layout, null)
-        val adapter = RcViewDialogSpinnerAdapter(context, dialog)
+        val adapter = RcViewDialogSpinnerAdapter(dialog, selectTextView)
         val rcView = rootView.findViewById<RecyclerView>(R.id.rcSpinnerView)
         val rvView = rootView.findViewById<SearchView>(R.id.svSearchSpinner)
 
