@@ -17,7 +17,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:background="@android:drawable/editbox_background_normal"
+            android:orientation="vertical">
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vpImages"
@@ -25,17 +26,17 @@
                 android:layout_height="200dp"
                 android:layout_margin="5dp" />
 
-            <SearchView
-                android:id="@+id/svCounrySearch"
+            <TextView
+                android:id="@+id/tvAdvertisementCountry"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="5dp" />
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/select_country"
+                android:onClick="onClickSelectCountry"/>
 
-            <Spinner
-                android:id="@+id/spCountry"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
