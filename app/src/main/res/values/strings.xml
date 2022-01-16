@@ -32,4 +32,7 @@
     <string name="sign_up_email_with_google_error">Данный email уже используется в Google авторизации.
         \nДля регистрации по данному email, требуется авторизаваться по Google аккаунту</string>
     <string name="sign_in_successful">Вы успешно вошли в аккаунт</string>
+    <!-- Edit Activity -->
+    <string name="select_country">Выберите страну</string>
+    <string name="select_city">Выберите город</string>
 </resources>
